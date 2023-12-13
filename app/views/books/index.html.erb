@@ -1,0 +1,22 @@
+<h1>Welcome to the Books  Listing Page </h1>
+
+<table border = "1">
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Publisher</th>
+<th>Author_ID</th>
+<th>Genre_ID</th>
+</tr>
+
+
+<tr>
+<% @books.each do |book|%>
+<td> <%= book.id %></td>
+<td> <%= book.name %> </td>
+<td> <%= book.publisher %></td>
+<td> <%= book.author_id %></td>
+<td> <%= book.genre_id %></td>
+</tr>
+<%end %>
+</table>
