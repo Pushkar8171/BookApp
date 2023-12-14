@@ -3,16 +3,19 @@
 <table border = "1">
 <tr>
 <th>Id</th>
+<th>Image</th>
 <th>Name</th>
 <th>Publisher</th>
 <th>Author_ID</th>
 <th>Genre_ID</th>
+
 </tr>
 
 
 <tr>
 <% @books.each do |book|%>
 <td> <%= book.id %></td>
+<td><img src="images/book3.png"></td>
 <td> <%= book.name %> </td>
 <td> <%= book.publisher %></td>
 <td> <%= book.author_id %></td>
